@@ -1,0 +1,27 @@
+@import "../base/variables";
+@import "../base/extends";
+
+
+header {
+
+    .navbar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: $bg-general;
+        opacity: 70%;
+
+        .nav-link {
+            @extend %font__general;
+            text-decoration: none;
+
+            &:active, &:hover {
+
+                background-color: $bg-link;
+                color: $color;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@import "../base/variables";
+@import "../base/extends";
+
+
+.body__page {
+    
+    .main__nosotros {
+        margin-top: 66px;
+        width: 100%;
+
+        .nosotros__carousel {
+            z-index: -1;
+
+        }
+
+        .nosotros__frase {
+            display: block;
+            justify-content: center;
+            margin-top: 80px;
+            background-color: $bg-text;
+            font-family: 'Luxurious Roman', cursive;
+            color: $color;
+            font-size: 20px;
+            padding: 60px;
+
+            @media screen and (max-width: 450px) {
+                padding: 0,3em;
+            }
+
+            .col-martha {
+                text-align: center;
+
+            }
+
+            .martha {
+                font-family: Verdana, Geneva, Tahoma, sans-serif; 
+                color: $color;
+                font-size: 18px;
+
+            }
+        }
+
+        .row__nosotros {
+            
+                .img-nosotros {
+                        width: 80%;
+                        height: auto;
+                        margin: 10px;
+
+                    }
+
+                .nosotros__info {
+                    margin-top: 100px;
+                    padding: 30px;
+                    margin-bottom: 20px;
+                    background-color: $bg-text;
+
+                    @media screen and (max-width: 450px) {
+                        font-size: 12px;
+                    }
+
+                    .nosotros__h4 {
+                        @extend %font__general;
+                         font-weight: bold;
+                         text-decoration: underline solid $color 1px;
+                         
+                         @media screen and (max-width: 450px) {
+                            font-size: 1rem;
+                        }
+                    }
+
+                }
+                    .nosotros__info--paragraph {
+                        @extend %texts;
+                    }
+        }
+    }
+    
+
+    .map {
+        @extend %flex__center;
+        align-content: center;
+        margin: 20px;
+
+        .nosotros__info--paragraph {
+            @extend %texts;
+        }
+
+        iframe {
+            width: 250px;
+            height: 250px;
+            margin-left: 5px;
+            border-radius: 30px;
+
+            @media screen and (max-width: 450px) {
+                width: 80px;
+                height: 80px;
+            }
+
+        }
+    }
+}

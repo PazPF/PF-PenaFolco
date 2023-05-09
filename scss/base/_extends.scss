@@ -1,0 +1,18 @@
+@import "variables";
+
+%texts {
+    font-family: $font-general;
+    color: $color;
+    font-weight: bold;
+    text-align: justify;
+}
+
+%flex__center {
+    display: flex;
+    justify-content: center;
+}
+
+%font__general {
+    font-family: $font-general;
+    color: $color;
+}

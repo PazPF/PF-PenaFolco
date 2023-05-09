@@ -1,0 +1,93 @@
+@import "../base/variables";
+@import "../base/extends";
+
+.index__body {
+    background-color: $bg-general;
+
+    .index__title {
+        font-family: $font-general;
+        background: radial-gradient($bg-title);
+        padding: 100px;
+        text-shadow: $text-shadow;
+
+        @media screen and (max-width: 450px) {
+          padding-bottom: 20px;
+        }
+  
+        .index__title--h1 {
+          font-size: 80px;
+          letter-spacing: 25px;
+          text-align: center;
+
+          @media screen and (max-width:1100px) {
+            font-size: 60px;
+            letter-spacing: 20px;
+          }
+          @media screen and (max-width: 450px) {
+            font-size: 1rem;
+          }
+        }
+  
+        .index__title--h4 {
+          font-size: 50px;
+          text-align: center;
+
+          @media screen and (max-width:1100px) {
+            font-size: 30px;
+          }
+          @media screen and (max-width: 450px) {
+            font-size: 1rem;
+          }
+        }
+    }
+  
+    .index {
+        @extend %flex__center;
+
+        .index__nav {
+          @media screen and (max-width: 450px) {
+            padding: 0;
+          }
+          
+          .index__nav--item {
+            display: inline-block;
+            margin: 50px 50px 70px 50px;
+  
+            @media screen and (max-width:1100px) {
+              display: block;
+              justify-content: center;
+            }
+          }
+    
+          img {
+            width: 250px;
+            height: 250px;
+            transition: transform 0.3s ease-in-out;
+    
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+    
+          #img1:hover img {
+            content: url(../imagenes/contempo2.png);
+          }
+    
+          #img2:hover img {
+            content: url(../imagenes/jazz2.png);
+          }
+    
+          #img3:hover img {
+            content: url(../imagenes/urbano2.png);
+          }
+
+        }
+  
+        
+    }
+  
+      video {
+        width: 100%;
+        margin-top: 70px;
+    }
+}

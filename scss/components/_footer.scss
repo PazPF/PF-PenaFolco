@@ -1,0 +1,55 @@
+@import "../base/variables";
+@import "../base/extends";
+
+
+footer {
+    
+    display: grid;
+    grid-template-columns: repeat (3, 1fr) ;
+    @extend %font__general;
+    background-color: $bg-general;
+    opacity: 70%;
+    align-items: center;
+
+    .footer__container--nav {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        justify-self: right;
+
+        nav {
+
+            ul {
+                margin-right: 10px;
+                padding-top: 5px;
+
+                li {
+                    display: inline-block;
+
+                    img {
+                        width: 20px;
+                        height: 20px; 
+
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .footer__container--text {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        justify-self: center;
+        margin-left: 10em;
+
+        @media screen and (max-width: 450px) {
+            font-size: 9px;
+        }
+
+        &:hover {
+            text-decoration: underline $bg-text 2px;
+
+        }
+    }
+}

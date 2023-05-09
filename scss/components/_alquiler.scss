@@ -1,0 +1,114 @@
+@import "../base/variables";
+@import "../base/extends";
+
+
+.body__page {
+
+    .container {
+
+        .title__pages {
+            @extend %font__general;
+            margin-top: 90px;
+            text-align: center;
+            text-decoration: underline 1px;
+
+        }
+
+        .row {
+
+            .alquiler__imagen {
+                @extend %flex__center;
+
+                .img-sala {
+                    padding-top: 3em;
+                    width: 70%;
+
+                    &:hover {
+                        
+                        transform: scale(1.3);
+                        transition: all 1s;
+                        cursor: pointer;
+                    
+                    }
+
+                    @media screen and (max-width: 450px) {
+                        width: 90%;
+                    }
+
+                }
+
+            } 
+          
+           .alquiler__content {
+                padding-top: 2em;
+
+                .alquiler__h4 {
+                    @extend %font__general;
+                    padding: 20px;
+                    text-align: center;
+                    font-size: 22px;
+                    letter-spacing: 2px;
+                    background-clip: text;
+                    font-weight: bold;
+
+                    @media screen and (max-width: 450px) {
+                        font-size: 1rem;
+                    }
+
+                }
+
+                .alquiler__item {
+                    @extend %texts;
+                    padding: 10px;
+                    background-color: $bg-text;
+
+                    @media screen and (max-width: 450px) {
+                        font-size: 12px;
+                    }
+
+                    .li__medidas {
+                        text-align: center;
+                        font-weight: bolder;
+                         background-color:  $bg-link;
+
+                    }
+                }
+            }
+
+            .h4__gotan {
+                background-image: linear-gradient(to left, $bg-gradient-salas);
+
+            }
+
+            .h4__isadora {
+                background-image: linear-gradient(to right, $bg-gradient-salas);
+
+            }
+
+        }
+
+        
+
+        .salas__contacto {
+            @extend %texts;
+            font-size: 18px;
+            padding: 10px;
+            margin: 10px;
+            background-color: $bg-text;
+
+            @media screen and (max-width: 450px) {
+                padding: 0.3em;
+                font-size: 12px;
+            }
+
+            a {
+                @extend %font__general;
+
+                &:active, &:hover {
+                    background-color: $bg-link;
+
+                }
+            }
+        }
+    }
+}

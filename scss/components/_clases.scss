@@ -1,0 +1,56 @@
+@import "../base/variables";
+@import "../base/extends";
+
+
+body {
+
+    .clases__titulo {
+        padding: 100px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+
+        .title__clases {
+            background-color: #00000065;
+        }
+    }
+
+    .contempo__titulo {
+        background-image: url(../imagenes/contempo-clase.jpg);
+     
+    }
+
+    .jazz__titulo {
+        background-image: url(../imagenes/jazz-clase.jpg);
+
+    }
+
+    .urbano__titulo {
+        background-image: url(../imagenes/urbano-clase.jpg);
+
+    }
+
+    .clases__descripcion {
+        padding: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+
+        @media screen and (max-width:600px) {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+
+        p {
+            text-align: justify;
+            font-family: $font-general;
+            font-weight: bold;
+
+        }
+
+    }
+}

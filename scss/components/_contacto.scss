@@ -1,0 +1,109 @@
+@import "../base/variables";
+@import "../base/extends";
+
+
+.body__page {
+
+    section {
+
+        .contacto__nav {
+            @extend %flex__center;
+
+            .nav__element {
+                display: flex;
+
+                a {
+                    margin: 10px;
+
+                    .img-contacto {
+                        width: 50px;
+                        height: 50px; 
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+
+        .contacto__mensaje {
+            @extend %font__general;
+            text-align: center;
+            font-size: 1.4 rem;
+            margin-top: 3em;
+        }
+
+        .div__form {
+            width: 100%;
+            padding-bottom: 300px;
+            display: flex;
+            
+            .form {
+                width: 100%;
+                max-width: 406px;
+                border-radius: 1em;
+                padding: 1em;
+                margin: auto;
+
+                .form__container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: 1 fr;
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                    width: 100%;
+                    height: 6em;
+                    grid-auto-columns: 100%;
+
+                    @media (max-width: 450px) {
+                        padding: 3.5em 0em;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                    }
+
+                    .item1, .item2 {
+                        @media (max-width: 450px) {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+
+                        .form__input {
+
+                            font-size: .8rem;
+                            font-family: $font-general;
+                            background-color: #3332328e;
+                            padding: .4em .2em;
+                            outline: none;
+                            border: none;
+                            border: 2px solid $bg-text;
+                            border-radius: 0.2em;
+                            margin: .2em;
+                        }
+                    } 
+
+                    .form__input--mensaje {
+                        resize: none;
+                        background-color: #3332328e;
+                        padding: 1.5em 1em;
+                        margin-bottom: .2em;
+                    }
+
+                    .form__cta {
+                        background-color: $bg-text;
+                        color: rgb(255, 255, 255);
+                        border: none;
+                        font-size: .8rem;
+                        font-family: $font-general;
+                        padding: .2em;
+                        border-radius: .2em;
+                        cursor: pointer;
+                        float: right;
+
+                    }
+                }
+            }
+        }
+    }
+}
