@@ -31,8 +31,6 @@
 
             .alquiler__imagen {
                 @media screen and (max-width: 450px) {
-                    display: flex;
-                    justify-self: center;
                     width: 20rem;
                 }
                 @extend %flex__center;

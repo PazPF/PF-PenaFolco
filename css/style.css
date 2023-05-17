@@ -262,8 +262,6 @@ footer .footer__container--text:hover {
 }
 @media screen and (max-width: 450px) {
   .body__page .container .row__alquiler .alquiler__imagen {
-    display: flex;
-    justify-self: center;
     width: 20rem;
   }
 }
