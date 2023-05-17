@@ -433,7 +433,7 @@ body .clases__descripcion p {
 }
 .body__page section .div__form {
   width: 100%;
-  padding-bottom: 300px;
+  padding-bottom: 150px;
   display: flex;
 }
 .body__page section .div__form .form {
@@ -446,9 +446,6 @@ body .clases__descripcion p {
 .body__page section .div__form .form .form__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1 fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   width: 100%;
   height: 6em;
   grid-auto-columns: 100%;
@@ -496,6 +493,13 @@ body .clases__descripcion p {
   border-radius: 0.2em;
   cursor: pointer;
   float: right;
+  margin-right: 25px;
+}
+@media (max-width: 450px) {
+  .body__page section .div__form .form .form__container .form__cta {
+    margin-right: 0px;
+    margin: 5px;
+  }
 }
 
 .body__page .map .nosotros__info--paragraph, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .container .row__alquiler .alquiler__content .alquiler__item, .body__page .container .salas__contacto {
@@ -580,6 +584,7 @@ body .clases__descripcion p {
     margin-top: 20px;
     display: inline-block;
     justify-self: center;
+    padding: 1.1em;
   }
 }
 .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
