@@ -41,13 +41,27 @@
         }
 
         .row__nosotros {
-            
-                .img-nosotros {
-                        width: 80%;
-                        height: auto;
-                        margin: 10px;
+            @media screen and (max-width: 450px) {
+                display: grid;
+                justify-items: center;
+         
+                grid-template-areas: 
+                      "danza1"
+                      "texto1"
+                      "danza2"
+                      "texto2"; 
+            }
+                  .nosotros__img--1 { grid-area: danza1; }
+                  .nosotros__img--2 { grid-area: danza2; }
+                  .nosotros__info--1 { grid-area: texto1; }
+                  .nosotros__info--2 { grid-area: texto2; }
 
+
+                    .img-nosotros {
+                        width: 100%;
+                        margin: 10px;
                     }
+                
 
                 .nosotros__info {
                     margin-top: 100px;
@@ -57,6 +71,9 @@
 
                     @media screen and (max-width: 450px) {
                         font-size: 12px;
+                        margin-top: 20px;
+                        display: inline-block;
+                        justify-self: center;
                     }
 
                     .nosotros__h4 {

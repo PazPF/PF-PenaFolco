@@ -2,42 +2,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .index__body {
-  background-color: black; }
+  background-color: black;
+}
 
 .body__page {
   background-image: url(../imagenes/pages-fondo.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+}
 
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 .title__pages {
   margin-top: 90px;
   text-align: center;
-  text-decoration: underline 1px; }
-  @media screen and (max-width: 450px) {
-    .title__pages {
-      font-size: 1rem; } }
+  text-decoration: underline 1px;
+}
+@media screen and (max-width: 450px) {
+  .title__pages {
+    font-size: 1rem;
+  }
+}
 
-.body__page .container .row .alquiler__content .alquiler__item, .body__page .container .salas__contacto, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .map .nosotros__info--paragraph {
+.body__page .map .nosotros__info--paragraph, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .container .salas__contacto, .body__page .container .row__alquiler .alquiler__content .alquiler__item {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2;
+  color: rgba(255, 255, 255, 0.6980392157);
   font-weight: bold;
-  text-align: justify; }
+  text-align: justify;
+}
 
-.index__body .index, .body__page .container .row .alquiler__imagen, .body__page section .contacto__nav, .body__page .map {
+.body__page .map, .body__page section .contacto__nav, .body__page .container .row__alquiler .alquiler__imagen, .index__body .index {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
-.title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a, .body__page section .contacto__mensaje, .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
+.body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4, .body__page section .contacto__mensaje, .body__page .container .salas__contacto a, .body__page .container .row__alquiler .alquiler__content .alquiler__h4, .body__page .container .title__pages, footer, header .navbar .nav-link, .title__pages {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2; }
+  color: rgba(255, 255, 255, 0.6980392157);
+}
 
 header .navbar {
   width: 100%;
@@ -45,408 +55,576 @@ header .navbar {
   top: 0;
   z-index: 1;
   background-color: #000000;
-  opacity: 70%; }
-  header .navbar .nav-link {
-    text-decoration: none; }
-    header .navbar .nav-link:active, header .navbar .nav-link:hover {
-      background-color: rgba(80, 5, 17, 0.527);
-      color: #ffffffb2;
-      text-decoration: underline; }
+  opacity: 70%;
+}
+header .navbar .nav-link {
+  text-decoration: none;
+}
+header .navbar .nav-link:active, header .navbar .nav-link:hover {
+  background-color: rgba(80, 5, 17, 0.527);
+  color: rgba(255, 255, 255, 0.6980392157);
+  text-decoration: underline;
+}
 
-.body__page .container .row .alquiler__content .alquiler__item, .body__page .container .salas__contacto, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .map .nosotros__info--paragraph {
+.body__page .map .nosotros__info--paragraph, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .container .salas__contacto, .body__page .container .row__alquiler .alquiler__content .alquiler__item {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2;
+  color: rgba(255, 255, 255, 0.6980392157);
   font-weight: bold;
-  text-align: justify; }
+  text-align: justify;
+}
 
-.index__body .index, .body__page .container .row .alquiler__imagen, .body__page section .contacto__nav, .body__page .map {
+.body__page .map, .body__page section .contacto__nav, .body__page .container .row__alquiler .alquiler__imagen, .index__body .index {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
-.title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a, .body__page section .contacto__mensaje, .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
+.body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4, .body__page section .contacto__mensaje, .body__page .container .salas__contacto a, .body__page .container .row__alquiler .alquiler__content .alquiler__h4, .body__page .container .title__pages, footer, .title__pages, header .navbar .nav-link {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2; }
+  color: rgba(255, 255, 255, 0.6980392157);
+}
 
 footer {
   display: grid;
   grid-template-columns: repeat 3, 1fr;
   background-color: #000000;
   opacity: 70%;
-  align-items: center; }
-  footer .footer__container--nav {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    justify-self: right; }
-    footer .footer__container--nav nav ul {
-      margin-right: 10px;
-      padding-top: 5px; }
-      footer .footer__container--nav nav ul li {
-        display: inline-block; }
-        footer .footer__container--nav nav ul li img {
-          width: 20px;
-          height: 20px; }
+  align-items: center;
+}
+footer .footer__container--nav {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  justify-self: right;
+}
+footer .footer__container--nav nav ul {
+  margin-right: 10px;
+  padding-top: 5px;
+}
+footer .footer__container--nav nav ul li {
+  display: inline-block;
+}
+footer .footer__container--nav nav ul li img {
+  width: 20px;
+  height: 20px;
+}
+footer .footer__container--text {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: center;
+  margin-left: 10em;
+}
+@media screen and (max-width: 450px) {
   footer .footer__container--text {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    justify-self: center;
-    margin-left: 10em; }
-    @media screen and (max-width: 450px) {
-      footer .footer__container--text {
-        font-size: 9px; } }
-    footer .footer__container--text:hover {
-      text-decoration: underline rgba(65, 6, 20, 0.699) 2px; }
+    font-size: 9px;
+  }
+}
+footer .footer__container--text:hover {
+  text-decoration: underline rgba(65, 6, 20, 0.699) 2px;
+}
 
-.body__page .container .row .alquiler__content .alquiler__item, .body__page .container .salas__contacto, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .map .nosotros__info--paragraph {
+.body__page .map .nosotros__info--paragraph, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .container .salas__contacto, .body__page .container .row__alquiler .alquiler__content .alquiler__item {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2;
+  color: rgba(255, 255, 255, 0.6980392157);
   font-weight: bold;
-  text-align: justify; }
+  text-align: justify;
+}
 
-.index__body .index, .body__page .container .row .alquiler__imagen, .body__page section .contacto__nav, .body__page .map {
+.body__page .map, .body__page section .contacto__nav, .body__page .container .row__alquiler .alquiler__imagen, .index__body .index {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
-.title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a, .body__page section .contacto__mensaje, .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
+.body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4, .body__page section .contacto__mensaje, .body__page .container .salas__contacto a, .body__page .container .row__alquiler .alquiler__content .alquiler__h4, .body__page .container .title__pages, .title__pages, header .navbar .nav-link, footer {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2; }
+  color: rgba(255, 255, 255, 0.6980392157);
+}
 
 .index__body {
-  background-color: #000000; }
+  background-color: #000000;
+}
+.index__body .index__title {
+  font-family: "Gruppo", cursive;
+  background: radial-gradient(rgba(80, 5, 17, 0.527), #000000);
+  padding: 100px;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgba(255, 255, 255, 0.747), 0 0 0.2em rgb(134, 45, 50);
+}
+@media screen and (max-width: 450px) {
   .index__body .index__title {
-    font-family: "Gruppo", cursive;
-    background: radial-gradient(rgba(80, 5, 17, 0.527), #000000);
-    padding: 100px;
-    text-shadow: 1px 1px 2px white, 0 0 1em rgba(255, 255, 255, 0.747), 0 0 0.2em #862d32; }
-    @media screen and (max-width: 450px) {
-      .index__body .index__title {
-        padding-bottom: 20px; } }
-    .index__body .index__title .index__title--h1 {
-      font-size: 80px;
-      letter-spacing: 25px;
-      text-align: center; }
-      @media screen and (max-width: 1100px) {
-        .index__body .index__title .index__title--h1 {
-          font-size: 60px;
-          letter-spacing: 20px; } }
-      @media screen and (max-width: 450px) {
-        .index__body .index__title .index__title--h1 {
-          font-size: 1rem; } }
-    .index__body .index__title .index__title--h4 {
-      font-size: 50px;
-      text-align: center; }
-      @media screen and (max-width: 1100px) {
-        .index__body .index__title .index__title--h4 {
-          font-size: 30px; } }
-      @media screen and (max-width: 450px) {
-        .index__body .index__title .index__title--h4 {
-          font-size: 1rem; } }
-  @media screen and (max-width: 450px) {
-    .index__body .index .index__nav {
-      padding: 0; } }
+    padding-bottom: 20px;
+  }
+}
+.index__body .index__title .index__title--h1 {
+  font-size: 80px;
+  letter-spacing: 25px;
+  text-align: center;
+}
+@media screen and (max-width: 1100px) {
+  .index__body .index__title .index__title--h1 {
+    font-size: 60px;
+    letter-spacing: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .index__body .index__title .index__title--h1 {
+    font-size: 1rem;
+  }
+}
+.index__body .index__title .index__title--h4 {
+  font-size: 50px;
+  text-align: center;
+}
+@media screen and (max-width: 1100px) {
+  .index__body .index__title .index__title--h4 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .index__body .index__title .index__title--h4 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .index__body .index .index__nav {
+    padding: 0;
+  }
+}
+.index__body .index .index__nav .index__nav--item {
+  display: inline-block;
+  margin: 50px 50px 70px 50px;
+}
+@media screen and (max-width: 1100px) {
   .index__body .index .index__nav .index__nav--item {
-    display: inline-block;
-    margin: 50px 50px 70px 50px; }
-    @media screen and (max-width: 1100px) {
-      .index__body .index .index__nav .index__nav--item {
-        display: block;
-        justify-content: center; } }
-  .index__body .index .index__nav img {
-    width: 250px;
-    height: 250px;
-    transition: transform 0.3s ease-in-out; }
-    .index__body .index .index__nav img:hover {
-      transform: scale(1.2); }
-  .index__body .index .index__nav #img1:hover img {
-    content: url(../imagenes/contempo2.png); }
-  .index__body .index .index__nav #img2:hover img {
-    content: url(../imagenes/jazz2.png); }
-  .index__body .index .index__nav #img3:hover img {
-    content: url(../imagenes/urbano2.png); }
-  .index__body video {
-    width: 100%;
-    margin-top: 70px; }
+    display: block;
+    justify-content: center;
+  }
+}
+.index__body .index .index__nav img {
+  width: 250px;
+  height: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+.index__body .index .index__nav img:hover {
+  transform: scale(1.2);
+}
+.index__body .index .index__nav #img1:hover img {
+  content: url(../imagenes/contempo2.png);
+}
+.index__body .index .index__nav #img2:hover img {
+  content: url(../imagenes/jazz2.png);
+}
+.index__body .index .index__nav #img3:hover img {
+  content: url(../imagenes/urbano2.png);
+}
+.index__body video {
+  width: 100%;
+  margin-top: 70px;
+}
 
-.body__page .container .row .alquiler__content .alquiler__item, .body__page .container .salas__contacto, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .map .nosotros__info--paragraph {
+.body__page .map .nosotros__info--paragraph, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .container .salas__contacto, .body__page .container .row__alquiler .alquiler__content .alquiler__item {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2;
+  color: rgba(255, 255, 255, 0.6980392157);
   font-weight: bold;
-  text-align: justify; }
+  text-align: justify;
+}
 
-.index__body .index, .body__page .container .row .alquiler__imagen, .body__page section .contacto__nav, .body__page .map {
+.body__page .map, .body__page section .contacto__nav, .body__page .container .row__alquiler .alquiler__imagen, .index__body .index {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
-.title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a, .body__page section .contacto__mensaje, .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
+.body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4, .body__page section .contacto__mensaje, .body__page .container .salas__contacto a, .body__page .container .row__alquiler .alquiler__content .alquiler__h4, .body__page .container .title__pages, .title__pages, header .navbar .nav-link, footer {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2; }
+  color: rgba(255, 255, 255, 0.6980392157);
+}
 
 .body__page .container .title__pages {
   margin-top: 90px;
   text-align: center;
-  text-decoration: underline 1px; }
-
-.body__page .container .row .alquiler__imagen .img-sala {
+  text-decoration: underline 1px;
+}
+@media screen and (max-width: 450px) {
+  .body__page .container .row__alquiler {
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "isadoratext" "isadoraimg" "gotantext" "gotanimg";
+  }
+}
+.body__page .container .row__alquiler .alquiler__imagen--Isadora {
+  grid-area: isadoraimg;
+}
+.body__page .container .row__alquiler .alquiler__imagen--gotan {
+  grid-area: gotanimg;
+}
+.body__page .container .row__alquiler .isadora {
+  grid-area: isadoratext;
+}
+.body__page .container .row__alquiler .gotan {
+  grid-area: gotantext;
+}
+@media screen and (max-width: 450px) {
+  .body__page .container .row__alquiler .alquiler__imagen {
+    display: flex;
+    justify-self: center;
+    width: 20rem;
+  }
+}
+.body__page .container .row__alquiler .alquiler__imagen .img-sala {
   padding-top: 3em;
-  width: 70%; }
-  .body__page .container .row .alquiler__imagen .img-sala:hover {
-    transform: scale(1.3);
-    transition: all 1s;
-    cursor: pointer; }
-  @media screen and (max-width: 450px) {
-    .body__page .container .row .alquiler__imagen .img-sala {
-      width: 90%; } }
-
-.body__page .container .row .alquiler__content {
-  padding-top: 2em; }
-  .body__page .container .row .alquiler__content .alquiler__h4 {
-    padding: 20px;
-    text-align: center;
-    font-size: 22px;
-    letter-spacing: 2px;
-    background-clip: text;
-    font-weight: bold; }
-    @media screen and (max-width: 450px) {
-      .body__page .container .row .alquiler__content .alquiler__h4 {
-        font-size: 1rem; } }
-  .body__page .container .row .alquiler__content .alquiler__item {
-    padding: 10px;
-    background-color: rgba(65, 6, 20, 0.699); }
-    @media screen and (max-width: 450px) {
-      .body__page .container .row .alquiler__content .alquiler__item {
-        font-size: 12px; } }
-    .body__page .container .row .alquiler__content .alquiler__item .li__medidas {
-      text-align: center;
-      font-weight: bolder;
-      background-color: rgba(80, 5, 17, 0.527); }
-
-.body__page .container .row .h4__gotan {
-  background-image: linear-gradient(to left, rgba(168, 67, 73, 0.39), rgba(43, 4, 9, 0.39)); }
-
-.body__page .container .row .h4__isadora {
-  background-image: linear-gradient(to right, rgba(168, 67, 73, 0.39), rgba(43, 4, 9, 0.39)); }
-
+  width: 70%;
+}
+@media screen and (max-width: 450px) {
+  .body__page .container .row__alquiler .alquiler__imagen .img-sala {
+    padding-bottom: 3em;
+    padding-top: 0px;
+  }
+}
+.body__page .container .row__alquiler .alquiler__imagen .img-sala:hover {
+  transform: scale(1.3);
+  transition: all 1s;
+  cursor: pointer;
+}
+@media screen and (max-width: 450px) {
+  .body__page .container .row__alquiler .alquiler__imagen .img-sala {
+    width: 90%;
+  }
+}
+.body__page .container .row__alquiler .alquiler__content {
+  padding-top: 2em;
+}
+@media screen and (max-width: 450px) {
+  .body__page .container .row__alquiler .alquiler__content {
+    padding: 1.1em;
+    width: 20em;
+  }
+}
+.body__page .container .row__alquiler .alquiler__content .alquiler__h4 {
+  padding: 20px;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 2px;
+  background-clip: text;
+  font-weight: bold;
+}
+@media screen and (max-width: 450px) {
+  .body__page .container .row__alquiler .alquiler__content .alquiler__h4 {
+    font-size: 1rem;
+  }
+}
+.body__page .container .row__alquiler .alquiler__content .alquiler__item {
+  padding: 10px;
+  background-color: rgba(65, 6, 20, 0.699);
+}
+@media screen and (max-width: 450px) {
+  .body__page .container .row__alquiler .alquiler__content .alquiler__item {
+    font-size: 12px;
+  }
+}
+.body__page .container .row__alquiler .alquiler__content .alquiler__item .li__medidas {
+  text-align: center;
+  font-weight: bolder;
+  background-color: rgba(80, 5, 17, 0.527);
+}
+.body__page .container .row__alquiler .h4__gotan {
+  background-image: linear-gradient(to left, rgba(168, 67, 73, 0.39), rgba(43, 4, 9, 0.39));
+}
+.body__page .container .row__alquiler .h4__isadora {
+  background-image: linear-gradient(to right, rgba(168, 67, 73, 0.39), rgba(43, 4, 9, 0.39));
+}
 .body__page .container .salas__contacto {
   font-size: 18px;
   padding: 10px;
   margin: 10px;
-  background-color: rgba(65, 6, 20, 0.699); }
-  @media screen and (max-width: 450px) {
-    .body__page .container .salas__contacto {
-      padding: 0.3em;
-      font-size: 12px; } }
-  .body__page .container .salas__contacto a:active, .body__page .container .salas__contacto a:hover {
-    background-color: rgba(80, 5, 17, 0.527); }
+  background-color: rgba(65, 6, 20, 0.699);
+}
+@media screen and (max-width: 450px) {
+  .body__page .container .salas__contacto {
+    padding: 0.3em;
+    font-size: 12px;
+  }
+}
+.body__page .container .salas__contacto a:active, .body__page .container .salas__contacto a:hover {
+  background-color: rgba(80, 5, 17, 0.527);
+}
 
-.body__page .container .row .alquiler__content .alquiler__item, .body__page .container .salas__contacto, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .map .nosotros__info--paragraph {
+.body__page .map .nosotros__info--paragraph, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .container .row__alquiler .alquiler__content .alquiler__item, .body__page .container .salas__contacto {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2;
+  color: rgba(255, 255, 255, 0.6980392157);
   font-weight: bold;
-  text-align: justify; }
+  text-align: justify;
+}
 
-.index__body .index, .body__page .container .row .alquiler__imagen, .body__page section .contacto__nav, .body__page .map {
+.body__page .map, .body__page section .contacto__nav, .index__body .index, .body__page .container .row__alquiler .alquiler__imagen {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
-.title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a, .body__page section .contacto__mensaje, .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
+.body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4, .body__page section .contacto__mensaje, .title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row__alquiler .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2; }
+  color: rgba(255, 255, 255, 0.6980392157);
+}
 
 body .clases__titulo {
   padding: 100px;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
-  body .clases__titulo .title__clases {
-    background-color: #00000065; }
-
+  background-position: center center;
+}
+body .clases__titulo .title__clases {
+  background-color: rgba(0, 0, 0, 0.3960784314);
+}
 body .contempo__titulo {
-  background-image: url(../imagenes/contempo-clase.jpg); }
-
+  background-image: url(../imagenes/contempo-clase.jpg);
+}
 body .jazz__titulo {
-  background-image: url(../imagenes/jazz-clase.jpg); }
-
+  background-image: url(../imagenes/jazz-clase.jpg);
+}
 body .urbano__titulo {
-  background-image: url(../imagenes/urbano-clase.jpg); }
-
+  background-image: url(../imagenes/urbano-clase.jpg);
+}
 body .clases__descripcion {
   padding: 60px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px; }
-  @media screen and (max-width: 600px) {
-    body .clases__descripcion {
-      padding: 30px;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 10px; } }
-  body .clases__descripcion p {
-    text-align: justify;
-    font-family: "Gruppo", cursive;
-    font-weight: bold; }
-
-.body__page .container .row .alquiler__content .alquiler__item, .body__page .container .salas__contacto, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .map .nosotros__info--paragraph {
+  grid-gap: 20px;
+}
+@media screen and (max-width: 600px) {
+  body .clases__descripcion {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+body .clases__descripcion p {
+  text-align: justify;
   font-family: "Gruppo", cursive;
-  color: #ffffffb2;
   font-weight: bold;
-  text-align: justify; }
+}
 
-.index__body .index, .body__page .container .row .alquiler__imagen, .body__page section .contacto__nav, .body__page .map {
-  display: flex;
-  justify-content: center; }
-
-.title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a, .body__page section .contacto__mensaje, .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
+.body__page .map .nosotros__info--paragraph, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .container .row__alquiler .alquiler__content .alquiler__item, .body__page .container .salas__contacto {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2; }
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-weight: bold;
+  text-align: justify;
+}
+
+.body__page .map, .body__page section .contacto__nav, .index__body .index, .body__page .container .row__alquiler .alquiler__imagen {
+  display: flex;
+  justify-content: center;
+}
+
+.body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4, .body__page section .contacto__mensaje, .title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row__alquiler .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a {
+  font-family: "Gruppo", cursive;
+  color: rgba(255, 255, 255, 0.6980392157);
+}
 
 .body__page section .contacto__nav .nav__element {
-  display: flex; }
-  .body__page section .contacto__nav .nav__element a {
-    margin: 10px; }
-    .body__page section .contacto__nav .nav__element a .img-contacto {
-      width: 50px;
-      height: 50px; }
-
+  display: flex;
+}
+.body__page section .contacto__nav .nav__element a {
+  margin: 10px;
+}
+.body__page section .contacto__nav .nav__element a .img-contacto {
+  width: 50px;
+  height: 50px;
+}
 .body__page section .contacto__mensaje {
   text-align: center;
   font-size: 1.4 rem;
-  margin-top: 3em; }
-
+  margin-top: 3em;
+}
 .body__page section .div__form {
   width: 100%;
   padding-bottom: 300px;
-  display: flex; }
-  .body__page section .div__form .form {
-    width: 100%;
-    max-width: 406px;
-    border-radius: 1em;
-    padding: 1em;
-    margin: auto; }
-    .body__page section .div__form .form .form__container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1 fr;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      width: 100%;
-      height: 6em;
-      grid-auto-columns: 100%; }
-      @media (max-width: 450px) {
-        .body__page section .div__form .form .form__container {
-          padding: 3.5em 0em;
-          display: flex;
-          flex-direction: column;
-          align-items: start; } }
-      @media (max-width: 450px) {
-        .body__page section .div__form .form .form__container .item1, .body__page section .div__form .form .form__container .item2 {
-          display: flex;
-          flex-direction: column;
-          align-items: center; } }
-      .body__page section .div__form .form .form__container .item1 .form__input, .body__page section .div__form .form .form__container .item2 .form__input {
-        font-size: .8rem;
-        font-family: "Gruppo", cursive;
-        background-color: #3332328e;
-        padding: .4em .2em;
-        outline: none;
-        border: none;
-        border: 2px solid rgba(65, 6, 20, 0.699);
-        border-radius: 0.2em;
-        margin: .2em; }
-      .body__page section .div__form .form .form__container .form__input--mensaje {
-        resize: none;
-        background-color: #3332328e;
-        padding: 1.5em 1em;
-        margin-bottom: .2em; }
-      .body__page section .div__form .form .form__container .form__cta {
-        background-color: rgba(65, 6, 20, 0.699);
-        color: white;
-        border: none;
-        font-size: .8rem;
-        font-family: "Gruppo", cursive;
-        padding: .2em;
-        border-radius: .2em;
-        cursor: pointer;
-        float: right; }
-
-.body__page .container .row .alquiler__content .alquiler__item, .body__page .container .salas__contacto, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .map .nosotros__info--paragraph {
-  font-family: "Gruppo", cursive;
-  color: #ffffffb2;
-  font-weight: bold;
-  text-align: justify; }
-
-.index__body .index, .body__page .container .row .alquiler__imagen, .body__page section .contacto__nav, .body__page .map {
   display: flex;
-  justify-content: center; }
-
-.title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a, .body__page section .contacto__mensaje, .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
+}
+.body__page section .div__form .form {
+  width: 100%;
+  max-width: 406px;
+  border-radius: 1em;
+  padding: 1em;
+  margin: auto;
+}
+.body__page section .div__form .form .form__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1 fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100%;
+  height: 6em;
+  grid-auto-columns: 100%;
+}
+@media (max-width: 450px) {
+  .body__page section .div__form .form .form__container {
+    padding: 3.5em 0em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+}
+@media (max-width: 450px) {
+  .body__page section .div__form .form .form__container .item1, .body__page section .div__form .form .form__container .item2 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80%;
+  }
+}
+.body__page section .div__form .form .form__container .item1 .form__input, .body__page section .div__form .form .form__container .item2 .form__input {
+  font-size: 0.8rem;
   font-family: "Gruppo", cursive;
-  color: #ffffffb2; }
+  background-color: rgba(51, 50, 50, 0.5568627451);
+  padding: 0.4em 0.2em;
+  outline: none;
+  border: none;
+  border: 2px solid rgba(65, 6, 20, 0.699);
+  border-radius: 0.2em;
+  margin: 0.2em;
+}
+.body__page section .div__form .form .form__container .form__input--mensaje {
+  resize: none;
+  background-color: rgba(51, 50, 50, 0.5568627451);
+  padding: 1.5em 1em;
+  margin-bottom: 0.2em;
+}
+.body__page section .div__form .form .form__container .form__cta {
+  background-color: rgba(65, 6, 20, 0.699);
+  color: rgb(255, 255, 255);
+  border: none;
+  font-size: 0.8rem;
+  font-family: "Gruppo", cursive;
+  padding: 0.2em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  float: right;
+}
+
+.body__page .map .nosotros__info--paragraph, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .container .row__alquiler .alquiler__content .alquiler__item, .body__page .container .salas__contacto {
+  font-family: "Gruppo", cursive;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-weight: bold;
+  text-align: justify;
+}
+
+.body__page .map, .index__body .index, .body__page .container .row__alquiler .alquiler__imagen, .body__page section .contacto__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4, .title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row__alquiler .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a, .body__page section .contacto__mensaje {
+  font-family: "Gruppo", cursive;
+  color: rgba(255, 255, 255, 0.6980392157);
+}
 
 .body__page .main__nosotros {
   margin-top: 66px;
-  width: 100%; }
-  .body__page .main__nosotros .nosotros__carousel {
-    z-index: -1; }
+  width: 100%;
+}
+.body__page .main__nosotros .nosotros__carousel {
+  z-index: -1;
+}
+.body__page .main__nosotros .nosotros__frase {
+  display: block;
+  justify-content: center;
+  margin-top: 80px;
+  background-color: rgba(65, 6, 20, 0.699);
+  font-family: "Luxurious Roman", cursive;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-size: 20px;
+  padding: 60px;
+}
+@media screen and (max-width: 450px) {
   .body__page .main__nosotros .nosotros__frase {
-    display: block;
-    justify-content: center;
-    margin-top: 80px;
-    background-color: rgba(65, 6, 20, 0.699);
-    font-family: 'Luxurious Roman', cursive;
-    color: #ffffffb2;
-    font-size: 20px;
-    padding: 60px; }
-    @media screen and (max-width: 450px) {
-      .body__page .main__nosotros .nosotros__frase {
-        padding: 0,3em; } }
-    .body__page .main__nosotros .nosotros__frase .col-martha {
-      text-align: center; }
-    .body__page .main__nosotros .nosotros__frase .martha {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: #ffffffb2;
-      font-size: 18px; }
-  .body__page .main__nosotros .row__nosotros .img-nosotros {
-    width: 80%;
-    height: auto;
-    margin: 10px; }
+    padding: 0, 3em;
+  }
+}
+.body__page .main__nosotros .nosotros__frase .col-martha {
+  text-align: center;
+}
+.body__page .main__nosotros .nosotros__frase .martha {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(255, 255, 255, 0.6980392157);
+  font-size: 18px;
+}
+@media screen and (max-width: 450px) {
+  .body__page .main__nosotros .row__nosotros {
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "danza1" "texto1" "danza2" "texto2";
+  }
+}
+.body__page .main__nosotros .row__nosotros .nosotros__img--1 {
+  grid-area: danza1;
+}
+.body__page .main__nosotros .row__nosotros .nosotros__img--2 {
+  grid-area: danza2;
+}
+.body__page .main__nosotros .row__nosotros .nosotros__info--1 {
+  grid-area: texto1;
+}
+.body__page .main__nosotros .row__nosotros .nosotros__info--2 {
+  grid-area: texto2;
+}
+.body__page .main__nosotros .row__nosotros .img-nosotros {
+  width: 100%;
+  margin: 10px;
+}
+.body__page .main__nosotros .row__nosotros .nosotros__info {
+  margin-top: 100px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: rgba(65, 6, 20, 0.699);
+}
+@media screen and (max-width: 450px) {
   .body__page .main__nosotros .row__nosotros .nosotros__info {
-    margin-top: 100px;
-    padding: 30px;
-    margin-bottom: 20px;
-    background-color: rgba(65, 6, 20, 0.699); }
-    @media screen and (max-width: 450px) {
-      .body__page .main__nosotros .row__nosotros .nosotros__info {
-        font-size: 12px; } }
-    .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
-      font-weight: bold;
-      text-decoration: underline solid #ffffffb2 1px; }
-      @media screen and (max-width: 450px) {
-        .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
-          font-size: 1rem; } }
-
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    justify-self: center;
+  }
+}
+.body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
+  font-weight: bold;
+  text-decoration: underline solid rgba(255, 255, 255, 0.6980392157) 1px;
+}
+@media screen and (max-width: 450px) {
+  .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
+    font-size: 1rem;
+  }
+}
 .body__page .map {
   align-content: center;
-  margin: 20px; }
+  margin: 20px;
+}
+.body__page .map iframe {
+  width: 250px;
+  height: 250px;
+  margin-left: 5px;
+  border-radius: 30px;
+}
+@media screen and (max-width: 450px) {
   .body__page .map iframe {
-    width: 250px;
-    height: 250px;
-    margin-left: 5px;
-    border-radius: 30px; }
-    @media screen and (max-width: 450px) {
-      .body__page .map iframe {
-        width: 80px;
-        height: 80px; } }
+    width: 80px;
+    height: 80px;
+  }
+}
 
-.body__page .container .row .alquiler__content .alquiler__item, .body__page .container .salas__contacto, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .map .nosotros__info--paragraph {
+.body__page .container .row__alquiler .alquiler__content .alquiler__item, .body__page .container .salas__contacto, .body__page .main__nosotros .row__nosotros .nosotros__info--paragraph, .body__page .map .nosotros__info--paragraph {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2;
+  color: rgba(255, 255, 255, 0.6980392157);
   font-weight: bold;
-  text-align: justify; }
+  text-align: justify;
+}
 
-.index__body .index, .body__page .container .row .alquiler__imagen, .body__page section .contacto__nav, .body__page .map {
+.index__body .index, .body__page .container .row__alquiler .alquiler__imagen, .body__page section .contacto__nav, .body__page .map {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
-.title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a, .body__page section .contacto__mensaje, .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
+.title__pages, header .navbar .nav-link, footer, .body__page .container .title__pages, .body__page .container .row__alquiler .alquiler__content .alquiler__h4, .body__page .container .salas__contacto a, .body__page section .contacto__mensaje, .body__page .main__nosotros .row__nosotros .nosotros__info .nosotros__h4 {
   font-family: "Gruppo", cursive;
-  color: #ffffffb2; }
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+
+/*# sourceMappingURL=style.css.map */

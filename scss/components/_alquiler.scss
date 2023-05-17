@@ -14,14 +14,36 @@
 
         }
 
-        .row {
+        .row__alquiler {
+            @media screen and (max-width: 450px) {
+                display: grid;
+                justify-items: center; 
+                grid-template-areas: 
+                      "isadoratext"
+                      "isadoraimg"
+                      "gotantext"
+                      "gotanimg"; 
+                  }
+                  .alquiler__imagen--Isadora { grid-area: isadoraimg; }
+                  .alquiler__imagen--gotan { grid-area: gotanimg; }
+                  .isadora { grid-area: isadoratext; }
+                  .gotan { grid-area: gotantext; }
 
             .alquiler__imagen {
+                @media screen and (max-width: 450px) {
+                    display: flex;
+                    justify-self: center;
+                    width: 20rem;
+                }
                 @extend %flex__center;
 
                 .img-sala {
                     padding-top: 3em;
                     width: 70%;
+                    @media screen and (max-width: 450px) {
+                        padding-bottom: 3em;
+                        padding-top: 0px;
+                    }
 
                     &:hover {
                         
@@ -41,6 +63,10 @@
           
            .alquiler__content {
                 padding-top: 2em;
+                @media screen and (max-width: 450px) {
+                    padding: 1.1em;
+                    width: 20em;
+                }
 
                 .alquiler__h4 {
                     @extend %font__general;
